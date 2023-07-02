@@ -1,0 +1,4 @@
+Inner objective `fi` for *Classical Implicit Differentiation*:
+    torch.mean((1/2)*torch.pow(((X_in @ theta) - y_in),2) + mu*torch.pow((X_in @ theta),2))
+Inner objective `fi` for *Neural Implicit Differentiation*:
+    torch.mean((1/2)*torch.pow((h(X_in) - y_in),2) + mu*torch.pow(h(X_in),2))
