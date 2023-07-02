@@ -1,0 +1,17 @@
+Constant step size gradient algorithm step :
+    x = x - step*g
+
+Adaptive gradient algorithm step :
+    x = x - step*g
+
+Nesterov's fast gradient algorithm step :
+    g = f_grad(y)
+    prev_x = x
+    prev_lbd = lbd
+    lbd = (1 + np.sqrt(1 + 4 * lbd**2)) / 2
+    alpha = (prev_lbd - 1) / lbd
+    x = y - step * g
+    y = x + alpha * (x - prev_x)
+
+Newton algorithm step :
+    x = x - np.linalg.solve(H,g)
