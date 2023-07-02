@@ -1,0 +1,3 @@
+**Description**: The tutorial is in the *OptimizationML.ipynb* file with corrections to all questions in *correction.txt*, all the optimization algorithms are contained in *algorithms.py*. The Machine Learning (ML) problem considered in this tutorial is defined in the *logistic_regression_ionosphere.py* file and *ionosphere.data* contains the real data for this problem. The *theory.pdf* file contains most of the theory seen during the introductory theoretical part.
+
+**Dependencies**: python3, numpy, scipy, sklearn, matplotlib
